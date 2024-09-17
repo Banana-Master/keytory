@@ -2,10 +2,12 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ReactNode } from 'react';
 import ClientProvider from './ClientProvider';
+import '@styles/reset.min.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://keytory.vercel.app'),
   title: '키토리',
   description:
     '키캡, 스위치, 하우징을 자유롭게 선택하고 조합하여 자신만의 키보드를 만들어 보세요.',
